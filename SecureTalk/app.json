@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Secure Talk",
+    "slug": "secure-talk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#667eea"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.securetalk.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#667eea"
+      },
+      "package": "com.securetalk.app",
+      "permissions": [
+        "CAMERA"
+      ]
+    }
+  }
+}
