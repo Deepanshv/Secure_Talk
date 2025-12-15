@@ -121,8 +121,8 @@ secure talk/
 │   ├── src/
 │   │   └── screens/
 │   │       ├── HomeScreen.tsx      # Landing page
-│   │       ├── ShareQRScreen.tsx   # QR code display
-│   │       ├── ScanQRScreen.tsx    # QR code scanner
+│   │       ├── ShareSessionScreen.tsx # Session ID display
+│   │       ├── JoinSessionScreen.tsx  # Session ID input
 │   │       └── ChatScreen.tsx      # Chat interface
 │   ├── App.tsx            # Main app component
 │   └── package.json       # App dependencies

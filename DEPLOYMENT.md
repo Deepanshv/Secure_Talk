@@ -88,7 +88,7 @@ eas build -p android --profile preview
 
 - This will upload your code to Expo's servers.
 - It will take 10-20 minutes to build.
-- When finished, it will give you a **QR Code** and a **Link** to download the APK.
+- When finished, it will give you a **Install Link** to download the APK.
 
 ---
 

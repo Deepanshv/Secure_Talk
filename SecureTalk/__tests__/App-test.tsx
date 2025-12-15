@@ -20,11 +20,11 @@ const createMockScreen = (name: string) => () =>
 
 // Mock screen components to isolate App.tsx for testing
 jest.mock('../src/screens/HomeScreen', () => createMockScreen('HomeScreen'));
-jest.mock('../src/screens/ShareQRScreen', () =>
-  createMockScreen('ShareQRScreen'),
+jest.mock('../src/screens/ShareSessionScreen', () =>
+  createMockScreen('ShareSessionScreen'),
 );
-jest.mock('../src/screens/ScanQRScreen', () =>
-  createMockScreen('ScanQRScreen'),
+jest.mock('../src/screens/JoinSessionScreen', () =>
+  createMockScreen('JoinSessionScreen'),
 );
 jest.mock('../src/screens/ChatScreen', () => createMockScreen('ChatScreen'));
 
