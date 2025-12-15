@@ -40,7 +40,7 @@ const ChatScreen: React.FC<Props> = ({ route, navigation }) => {
   const flatListRef = useRef<FlatList>(null);
 
   useEffect(() => {
-    socket.current = io('http://10.114.112.136:3000');
+    socket.current = io('https://secure-talk-server.onrender.com');
 
     socket.current.on('connect', () => {
       setIsConnected(true);
