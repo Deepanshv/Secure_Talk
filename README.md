@@ -1,4 +1,4 @@
-# ![Secure Talk Logo](SecureTalk/src/assets/images/s_logo.png) Secure Talk
+# !Secure Talk
 
 A secure and private ephemeral chat application built with React Native. Connect instantly via Session ID, chat securely, and terminate connections with one click that deletes all chat history.
 
