@@ -3,13 +3,13 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, StatusBar }
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../../App';
 
-type ScanQRScreenNavigationProp = StackNavigationProp<RootStackParamList, 'ScanQR'>;
+type JoinSessionScreenNavigationProp = StackNavigationProp<RootStackParamList, 'JoinSession'>;
 
 type Props = {
-  navigation: ScanQRScreenNavigationProp;
+  navigation: JoinSessionScreenNavigationProp;
 };
 
-const ScanQRScreen: React.FC<Props> = ({ navigation }) => {
+const JoinSessionScreen: React.FC<Props> = ({ navigation }) => {
   const [sessionId, setSessionId] = useState('');
 
   const handleJoin = () => {
@@ -69,7 +69,7 @@ const ScanQRScreen: React.FC<Props> = ({ navigation }) => {
 
         <View style={styles.infoBox}>
           <Text style={styles.infoText}>
-            💡 Ask your friend to share their session ID from the QR code screen
+            💡 Ask your friend to share their session ID
           </Text>
         </View>
       </View>
@@ -173,4 +173,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ScanQRScreen;
+export default JoinSessionScreen;

@@ -21,14 +21,14 @@ type Props = {
 const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const [isCreatingSession, setIsCreatingSession] = useState(false);
 
-  const handleShareQR = () => {
+  const handleStartChat = () => {
     setIsCreatingSession(true);
     
     // Generate a simple session ID on the client side
     const sessionId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
     
     setIsCreatingSession(false);
-    navigation.navigate('ShareQR', { sessionId });
+    navigation.navigate('ShareSession', { sessionId });
   };
 
   return (
@@ -52,7 +52,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
       <View style={styles.content}>
         <TouchableOpacity
           style={[styles.button, styles.primaryButton]}
-          onPress={handleShareQR}
+          onPress={handleStartChat}
           disabled={isCreatingSession}
           activeOpacity={0.8}
         >
@@ -71,7 +71,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
         <TouchableOpacity
           style={[styles.button, styles.secondaryButton]}
-          onPress={() => navigation.navigate('ScanQR')}
+          onPress={() => navigation.navigate('JoinSession')}
           activeOpacity={0.8}
         >
           <Text style={styles.buttonIcon}>🔗</Text>

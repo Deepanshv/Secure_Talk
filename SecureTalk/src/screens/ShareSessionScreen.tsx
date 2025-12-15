@@ -5,15 +5,15 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../../App';
 import * as Clipboard from 'expo-clipboard';
 
-type ShareQRScreenRouteProp = RouteProp<RootStackParamList, 'ShareQR'>;
-type ShareQRScreenNavigationProp = StackNavigationProp<RootStackParamList, 'ShareQR'>;
+type ShareSessionScreenRouteProp = RouteProp<RootStackParamList, 'ShareSession'>;
+type ShareSessionScreenNavigationProp = StackNavigationProp<RootStackParamList, 'ShareSession'>;
 
 type Props = {
-  route: ShareQRScreenRouteProp;
-  navigation: ShareQRScreenNavigationProp;
+  route: ShareSessionScreenRouteProp;
+  navigation: ShareSessionScreenNavigationProp;
 };
 
-const ShareQRScreen: React.FC<Props> = ({ route, navigation }) => {
+const ShareSessionScreen: React.FC<Props> = ({ route, navigation }) => {
   const { sessionId } = route.params;
 
   const handleCopy = async () => {
@@ -209,4 +209,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ShareQRScreen;
+export default ShareSessionScreen;

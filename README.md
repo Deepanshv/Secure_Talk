@@ -1,11 +1,11 @@
 # ![Secure Talk Logo](SecureTalk/src/assets/images/s_logo.png) Secure Talk
 
-A secure and private ephemeral chat application built with React Native. Connect instantly via QR code, chat securely, and terminate connections with one click that deletes all chat history.
+A secure and private ephemeral chat application built with React Native. Connect instantly via Session ID, chat securely, and terminate connections with one click that deletes all chat history.
 
 ## Features
 
 - 🔐 **End-to-End Encrypted**: Messages are sent securely through Socket.IO
-- 📱 **QR Code Connection**: Share QR codes to connect instantly with friends
+- 📱 **Simple Connection**: Share session IDs to connect instantly with friends
 - 💬 **Real-time Chat**: Instant message delivery with socket connections
 - 🗑️ **Self-Destructing**: Terminate button deletes entire chat history
 - 🎨 **Modern UI**: Beautiful dark mode interface with smooth animations
@@ -99,9 +99,9 @@ npm run ios
 ### Starting a Chat
 
 1. **User A**: Open the app and tap "Start New Chat"
-2. **User A**: Wait for QR code to appear
-3. **User B**: Open the app and tap "Scan QR Code"
-4. **User B**: Scan User A's QR code
+2. **User A**: Copy the Session ID
+3. **User B**: Open the app and tap "Join Session"
+4. **User B**: Enter User A's Session ID
 5. **Both**: You're now connected! Start chatting securely
 
 ### Terminating a Chat
@@ -138,12 +138,6 @@ secure talk/
 - Verify the IP address is correct in the source files
 - Check firewall settings allow connections on port 3000
 
-### QR Scanner Not Working
-
-- Grant camera permissions to the app
-- Ensure good lighting when scanning
-- Try using the manual Session ID input option
-
 ### Messages Not Sending
 
 - Check server console for errors
@@ -155,8 +149,6 @@ secure talk/
 - **React Native**: Mobile app framework
 - **Socket.IO**: Real-time bidirectional communication
 - **React Navigation**: Screen navigation
-- **react-native-qrcode-svg**: QR code generation
-- **react-native-qrcode-scanner**: QR code scanning
 - **Express**: Server framework
 - **UUID**: Session ID generation
 

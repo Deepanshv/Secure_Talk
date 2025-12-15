@@ -11,14 +11,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './src/screens/HomeScreen';
-import ShareQRScreen from './src/screens/ShareQRScreen';
-import ScanQRScreen from './src/screens/ScanQRScreen';
+import ShareSessionScreen from './src/screens/ShareSessionScreen';
+import JoinSessionScreen from './src/screens/JoinSessionScreen';
 import ChatScreen from './src/screens/ChatScreen';
 
 export type RootStackParamList = {
   Home: undefined;
-  ShareQR: { sessionId: string };
-  ScanQR: undefined;
+  ShareSession: { sessionId: string };
+  JoinSession: undefined;
   Chat: { sessionId: string };
 };
 
@@ -38,8 +38,8 @@ function App(): React.JSX.Element {
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="ShareQR" component={ShareQRScreen} />
-          <Stack.Screen name="ScanQR" component={ScanQRScreen} />
+          <Stack.Screen name="ShareSession" component={ShareSessionScreen} />
+          <Stack.Screen name="JoinSession" component={JoinSessionScreen} />
           <Stack.Screen name="Chat" component={ChatScreen} />
         </Stack.Navigator>
       </NavigationContainer>
