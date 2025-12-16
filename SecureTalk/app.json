@@ -16,14 +16,21 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.securetalk.app"
     },
+    "icon": "./assets/images/s_logo.png",
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/images/s_logo.png",
         "backgroundColor": "#667eea"
       },
-      "package": "com.securetalk.app",
+      "package": "com.securetalk",
       "permissions": [
         "CAMERA"
       ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00a2e663-1916-4a06-9a99-e5ea3b6f9035"
+      }
     }
   }
 }
