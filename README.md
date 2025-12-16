@@ -1,6 +1,11 @@
 # !Secure Talk
 
 A secure and private ephemeral chat application built with React Native. Connect instantly via Session ID, chat securely, and terminate connections with one click that deletes all chat history.
+    
+## 📥 Download
+
+[**Download Secure Talk for Android**](https://drive.google.com/file/d/11V2dqGuRgx3bWzHeF2ztLgJVlYDRwCck/view?usp=sharing)
+
 
 ## Features
 
