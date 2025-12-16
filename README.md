@@ -4,7 +4,7 @@ A secure and private ephemeral chat application built with React Native. Connect
     
 ## 📥 Download
 
-[**Download Secure Talk for Android**](https://drive.google.com/file/d/11V2dqGuRgx3bWzHeF2ztLgJVlYDRwCck/view?usp=sharing)
+[**Download Secure Talk for Android**](https://expo.dev/accounts/deepanshv/projects/secure-talk/builds/9d498316-4eaf-4a9e-b77b-b4357e4e2478)
 
 
 ## Features
